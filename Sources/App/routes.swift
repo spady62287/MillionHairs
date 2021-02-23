@@ -3,7 +3,10 @@ import Vapor
 public func routes(_ app: Application) throws {
     // This is the root Route
     app.get { req in
-        return "Welcome to Million Hairs"
+        req.leaf.render(template: "home", context: [
+            "title": "Hello",
+            "body": "Welcome to Million Hairs"
+        ])
     };
     app.get("staff") { req in
         return "Meet our great team"
