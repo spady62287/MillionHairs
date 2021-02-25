@@ -1,12 +1,18 @@
 import Vapor
+import Foundation
+import Leaf
 
 public func routes(_ app: Application) throws {
     // This is the root Route
-    app.get { req in
+    app.get() { req in
         req.leaf.render(template: "home", context: [
             "title": "Hello",
             "body": "Welcome to Million Hairs"
         ])
+    };
+    app.get("info") { req -> EventLoopFuture<View> in
+        let context = [String: String]()
+        return req.view.render("index", context)
     };
     app.get("staff") { req in
         return "Meet our great team"
