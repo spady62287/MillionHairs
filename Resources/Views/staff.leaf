@@ -2,7 +2,7 @@
 <html>
     <body>
         #if(isAvailable):
-            <h1>#(name)</h1>
+            <h1>#uppercased(name)</h1>
             <p>#(bio)</p>
         #else:
             <h1>Unknown staff member</h1>
