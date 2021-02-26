@@ -5,7 +5,7 @@ import Leaf
 public func routes(_ app: Application) throws {
     // This is the root Route
     app.get() { req in
-        req.leaf.render(template: "home", context: [
+        req.leaf.render("child", [
             "title": "Hello",
             "body": "Welcome to Million Hairs"
         ])
