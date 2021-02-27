@@ -5,7 +5,7 @@ import Leaf
 public func routes(_ app: Application) throws {
     // This is the root Route
     app.get() { req in
-        req.leaf.render("child", [
+        req.leaf.render("childHome", [
             "title": "Hello",
             "body": "Welcome to Million Hairs"
         ])
@@ -46,7 +46,7 @@ public func routes(_ app: Application) throws {
         }
         
         // Render template with the context
-        return req.view.render("staff", context)
+        return req.view.render("childStaff", context)
     };
     app.get("contact") { req in
         return "Get in touch with us"
