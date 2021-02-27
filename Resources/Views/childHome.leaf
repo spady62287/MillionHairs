@@ -1,0 +1,5 @@
+#extend("parentHome"):
+    #export("footer"):
+        <p>Copyright &copy; 2021 Alert Wisdom Solutions</p>
+    #endexport
+#endextend
