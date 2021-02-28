@@ -6,3 +6,5 @@ Following a Server-Side Swift Tutorial from [Hacking Swift](https://www.hackingw
 - Vapor 4
 - Swift 5
 - Xcode 12
+- Leaf
+- Bootstrap
